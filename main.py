@@ -1,16 +1,13 @@
-Nome = ""
-Idade = None
-Sexo = ''
-Cidade = ""
-Estado = ""
+from Pessoa import Pessoa
 
 
 def insere_dados():
-    Nome = str(input("Digite seu nome: "))
-    Idade = int(input("Digite sua idade: "))
-    Sexo = str(input("Digite seu sexo (M ou F): ")).upper()
-    Cidade = str(input("Digite sua cidade: "))
-    Estado = str(input("Digite seu estado (ex. CE): ")).upper()
+    nome = input("Digite seu nome: ")
+    idade = int(input("Digite sua idade: "))
+    sexo = input("Digite seu sexo (M ou F): ")
+    cidade = input("Digite sua cidade: ")
+    estado = input("Digite seu estado (ex. CE): ")
+    return Pessoa(nome, idade, sexo, cidade, estado)
 
 
 if __name__ == "__main__":
